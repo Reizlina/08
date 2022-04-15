@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 
   &__img {
     display: inline-block;
@@ -22,10 +21,6 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
-
-    @media (max-width: 480px) {
-      text-align: center;
-    }
   }
 
   &__text {
@@ -64,6 +59,16 @@
 
     color: #ffffff;
   }
+
+  @media (max-width: 1200px) {
+    ~ .section__title {
+      display: none;
+    }
+
+    &__busines-list {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -97,6 +102,7 @@
 
 @media (min-width: 1201px) {
   .features {
+    margin-bottom: 94px;
     &__item {
       width: 270px;
     }

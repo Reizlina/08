@@ -386,7 +386,6 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .features__img {
@@ -405,12 +404,6 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-}
-
-@media (max-width: 480px) {
-  .features__title {
-    text-align: center;
-  }
 }
 
 .features__text {
@@ -458,6 +451,15 @@ body {
   color: #ffffff;
 }
 
+@media (max-width: 1200px) {
+  .features ~ .section__title {
+    display: none;
+  }
+  .features__busines-list {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .features__item {
     width: 100%;
@@ -484,6 +486,9 @@ body {
 }
 
 @media (min-width: 1201px) {
+  .features {
+    margin-bottom: 94px;
+  }
   .features__item {
     width: 270px;
   }
