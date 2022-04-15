@@ -6,10 +6,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section {
-  padding: 94px 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -26,4 +22,16 @@ body {
 
 .hidden {
   display: none;
+}
+
+@media (max-width: 1200px) {
+  .section {
+    padding: 60px 15px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .section {
+    padding: 94px 0;
+  }
 }
