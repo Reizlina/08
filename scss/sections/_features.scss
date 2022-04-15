@@ -1,7 +1,18 @@
 .features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 94px;
+
+  &__img {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
 
   &__title {
     color: $title-text-color;
@@ -11,9 +22,10 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
-  }
-  &__item {
-    max-width: 270px;
+
+    @media (max-width: 480px) {
+      text-align: center;
+    }
   }
 
   &__text {
@@ -21,15 +33,6 @@
     line-height: 1.71;
   }
 
-  &__img {
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    padding: 25px 100px;
-    background-color: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
   &__busines-list {
     display: flex;
     justify-content: space-between;
@@ -60,5 +63,45 @@
     text-transform: uppercase;
 
     color: #ffffff;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    &__item {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    &__img {
+      width: 100%;
+      padding: 25px 0;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+  .features {
+    &__item {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+    }
+    &__img {
+      width: 100%;
+      padding: 25px 0;
+    }
+    &__text {
+      max-width: 354px;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .features {
+    &__item {
+      width: 270px;
+    }
+    &__img {
+      padding: 25px 100px;
+    }
   }
 }

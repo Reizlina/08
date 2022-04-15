@@ -20,6 +20,14 @@ body {
   font-weight: 700;
 }
 
+@media (max-width: 1200px) {
+  .section__title {
+    font-size: 28px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
+
 .hidden {
   display: none;
 }
