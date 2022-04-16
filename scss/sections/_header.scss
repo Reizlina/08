@@ -26,9 +26,12 @@
   &__menu {
     display: flex;
   }
-  &__menu-item:not(:last-child),
-  &__socials-item:not(:last-child) {
-    margin: 0 50px 0 0;
+
+  @media (min-width: 1201px) {
+    &__menu-item:not(:last-child),
+    &__socials-item:not(:last-child) {
+      margin: 0 50px 0 0;
+    }
   }
 
   &__menu-link {

@@ -9,4 +9,7 @@
   &__white {
     color: $primary-bg-color;
   }
+  @media (max-width: 1200px) {
+    font-size: 24px;
+  }
 }
