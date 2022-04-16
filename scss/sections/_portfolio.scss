@@ -5,8 +5,8 @@
 
   &__item {
     margin-top: 30px;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &:hover {
@@ -50,8 +50,8 @@
     opacity: 0;
 
     transform: translateY(100%);
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &__item:hover &__hover {

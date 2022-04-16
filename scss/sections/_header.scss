@@ -26,8 +26,8 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
   &__menu-link:hover,
   &__menu-link:focus {
@@ -64,8 +64,8 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     display: flex;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
   &__socials-link:hover,
   &__socials-link:focus {
@@ -76,8 +76,8 @@
     max-width: 20px;
     margin-right: 10px;
     fill: $primary-text-color;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
   &__socials-link:hover .header__socials-icon,
   &__socials-link:focus .header__socials-icon {

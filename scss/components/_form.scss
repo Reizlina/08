@@ -26,8 +26,8 @@
     box-sizing: border-box;
     border-radius: 4px;
     padding-left: 42px;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &__textarea {
@@ -46,8 +46,8 @@
     color: $title-text-color;
     margin-bottom: 32px;
 
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &__textarea::placeholder {
@@ -111,8 +111,8 @@
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &__btn:hover,
@@ -129,6 +129,11 @@
     margin-bottom: 30px;
 
     color: $primary-text-color;
+
+    @media (max-width: 1200px) {
+      font-size: 12px;
+      padding-left: 20px;
+    }
   }
 
   &__link {
@@ -151,6 +156,10 @@
     height: 15px;
     border: 2px solid $title-text-color;
     border-radius: 3px;
+
+    @media (max-width: 1200px) {
+      top: 4px;
+    }
   }
 
   &__checkmark-icon {
@@ -160,8 +169,8 @@
     top: 2px;
     left: 1px;
     fill: transparent;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &__checkbox-input:checked ~ &__checkmark {

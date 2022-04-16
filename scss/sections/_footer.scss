@@ -25,8 +25,8 @@
   }
 
   &__address-link {
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
     margin-bottom: 9px;
   }
 
@@ -88,8 +88,8 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     border-radius: 4px;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
     background-color: #2f303a;
 
     font-weight: 400;
@@ -132,8 +132,8 @@
     padding: 10px 62px 10px 29px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition;
+    transition-timing-function: $cubic-bezier;
   }
 
   &__subscribe-btn:hover,
@@ -149,78 +149,6 @@
     width: 24px;
     height: 24px;
     fill: $primary-bg-color;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer {
-    &__container {
-      justify-content: center;
-      width: calc(100% / 3);
-      text-align: center;
-    }
-
-    &__address-wrap {
-      margin-bottom: 60px;
-    }
-    &__address-link {
-      width: 232px;
-    }
-
-    &__socials {
-      margin-bottom: 60px;
-    }
-
-    &__subscribe {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    &__subscribe-input {
-      width: 300px;
-    }
-  }
-}
-
-@media (min-width: 481px) and (max-width: 1200px) {
-  .footer {
-    &__container {
-      width: 700px;
-
-      justify-content: space-between;
-    }
-
-    &__address-wrap {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      align-items: center;
-    }
-
-    &__socials {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      align-items: center;
-    }
-
-    &__form {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      align-items: center;
-      margin: 0 auto;
-    }
-
-    &__subscribe {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    &__subscribe-input {
-      width: 300px;
-    }
   }
 }
 
