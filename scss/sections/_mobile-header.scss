@@ -32,12 +32,12 @@
   //   fill: $accent-color;
   // }
 
-  &__contact-menu {
-    margin-top: auto;
-  }
+  // &__contact-menu {
+  //   margin-top: auto;
+  // }
 
   &__nav-container {
-    @media (max-width: 481px) {
+    @media (max-width: 480px) {
       display: none;
       position: fixed;
       overflow-y: scroll;
@@ -49,11 +49,21 @@
       z-index: 100;
 
       &.is-open {
-        display: block;
+        // display: block;
         padding: 48px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
     }
   }
+
+  // &__nav-container {
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: space-between;
+  //   padding: 30px 15px;
+  // }
 
   @media (max-width: 480px) {
     &__socials-list {
@@ -109,9 +119,9 @@
       letter-spacing: 0.02em;
     }
 
-    &__contact {
-      margin-bottom: 64px;
-    }
+    // &__contact {
+    //   margin-bottom: 64px;
+    // }
 
     &__contact-item:not(:last-child) {
       margin-bottom: 32px;
