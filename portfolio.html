@@ -16,45 +16,75 @@
   <body>
     <!-- Шапка -->
 
-    <header class="header">
+    <!-- <header class="header">
       <div class="header__container container">
-        <nav class="header__nav">
-          <a href="./index.html" class="logo header__logo">
-            Web<span class="logo__black">Studio</span></a
-          >
-          <ul class="header__menu">
-            <li class="header__menu-item">
-              <a href="./index.html" class="header__menu-link">Студия</a>
-            </li>
-            <li class="header__menu-item current">
-              <a href="./portfolio.html" class="header__menu-link">Портфолио</a>
-            </li>
-            <li class="header__menu-item">
-              <a href="" class="header__menu-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <a href="./index.html" class="logo header__logo">
+          Web<span class="logo__black">Studio</span></a
+        >
+        <button
+          class="header__btn is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="header__icon-menu" href="images/svg/mobile-header.svg#menu"></use>
+            <use class="header__icon-close" href="images/svg/mobile-header.svg#close"></use>
+          </svg>
+        </button>
 
-        <ul class="header__socials">
-          <li class="header__socials-item">
-            <a href="mailto:info@devstudio.com" class="header__socials-link">
-              <svg class="header__socials-icon">
-                <use href="./images/svg/mail-tel.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header__socials-item no-margin">
-            <a href="tel:+38-096-111-11-11" class="header__socials-link">
-              <svg class="header__socials-icon">
-                <use href="./images/svg/mail-tel.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <div class="header__nav-container" id="mobile-menu" data-menu>
+          <nav class="header__nav">
+            <ul class="header__menu">
+              <li class="header__menu-item">
+                <a href="./index.html" class="header__menu-link">Студия</a>
+              </li>
+              <li class="header__menu-item current">
+                <a href="./portfolio.html" class="header__menu-link">Портфолио</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="" class="header__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__contact-menu">
+            <ul class="header__contact">
+              <li class="header__contact-item">
+                <a href="mailto:info@devstudio.com" class="header__contact-link header__mail-acent">
+                  <svg class="header__contact-icon">
+                    <use href="./images/svg/mail-tel.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header__contact-item">
+                <a href="tel:+38-096-111-11-11" class="header__contact-link header__tel-acent">
+                  <svg class="header__contact-icon">
+                    <use href="./images/svg/mail-tel.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            <ul class="header__socials-list">
+              <li class="header__socials-item">
+                <a class="header__socials-link" href="#">Instagram</a>
+              </li>
+              <li class="header__socials-item">
+                <a class="header__socials-link" href="#">Twitter</a>
+              </li>
+              <li class="header__socials-item">
+                <a class="header__socials-link" href="#">Facebook</a>
+              </li>
+              <li class="header__socials-item">
+                <a class="header__socials-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- Портфолио -->
 
@@ -88,10 +118,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-1.jpg"
                   alt="Открытый ноутбук"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -110,10 +140,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-2.jpg"
                   alt="Два баскетболиста в прыжке"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -131,10 +161,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-3.jpg"
                   alt="Логотип ресторана морской еды"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -153,10 +183,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-4.jpg"
                   alt="Черные наушники"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -175,10 +205,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-5.jpg"
                   alt="Две картонные коробки"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -197,10 +227,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-6.jpg"
                   alt="Монитор с открытым веб-сайтом"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -219,10 +249,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-7.jpg"
                   alt="Открытая кнга"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -241,10 +271,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-8.jpg"
                   alt="Бирка на бичёвке"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -263,10 +293,10 @@
             <li class="portfolio__item">
               <div class="portfolio__hover-box">
                 <img
+                  class="portfolio__img"
                   src="./images/Portfolio/img-9.jpg"
                   alt="Человек пользуеться приложением на ноутбуке"
                   width="370"
-                  height="294"
                 />
                 <div class="portfolio__hover">
                   <p class="portfolio__text">
@@ -367,5 +397,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

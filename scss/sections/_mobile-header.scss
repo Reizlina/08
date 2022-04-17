@@ -1,6 +1,9 @@
 .header {
   &__btn {
     display: inline-flex;
+    // position: fixed;
+    // right: 15px;
+    // top: 10px;
     margin: 0;
     padding: 0;
     border: none;
@@ -24,18 +27,20 @@
     display: none;
   }
 
-  &__socials-menu {
+  &__contact-menu {
     margin-top: auto;
   }
+
   &__nav-container {
-    background-color: rgb(255, 255, 255);
     @media (max-width: 481px) {
       display: none;
-      position: absolute;
+      position: fixed;
+      overflow-y: scroll;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100vh;
+      height: 100%;
+      background: rgb(255, 255, 255);
 
       &.is-open {
         display: block;
@@ -43,9 +48,44 @@
       }
     }
   }
+
+  @media (max-width: 480px) {
+    &__socials-list {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 481px) {
+    &__socials-list {
+      display: none;
+    }
+  }
+
+  &__socials-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__socials-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    margin-left: 10px;
+    display: inline-block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+
+  &__socials-link {
+    font-size: 18px;
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+  }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 480px) {
   .header {
     &__menu {
       display: flex;
@@ -63,11 +103,15 @@
       letter-spacing: 0.02em;
     }
 
-    &__socials {
-      display: inline-block;
+    &__contact {
+      margin-bottom: 64px;
     }
 
-    &__socials-item:not(:last-child) {
+    &__contact-item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+    &__contact-link {
       margin-bottom: 32px;
     }
 
@@ -81,7 +125,7 @@
       color: $accent-color;
     }
 
-    &__socials-icon {
+    &__contact-icon {
       display: none;
     }
   }
