@@ -230,12 +230,6 @@ body {
           flex-direction: row;
 }
 
-@media (max-width: 480px) {
-  .header__nav {
-    margin-bottom: 300px;
-  }
-}
-
 .header__contact {
   display: -webkit-box;
   display: -ms-flexbox;
