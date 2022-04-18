@@ -503,6 +503,9 @@ body {
   .header__menu-item:not(:last-child) {
     margin-bottom: 32px;
   }
+  .header__menu-item.current {
+    color: #2196f3;
+  }
   .header__menu-link {
     color: #212121;
     font-weight: 500;
@@ -513,6 +516,9 @@ body {
     transition: 250ms;
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header__menu-link.current {
+    color: #2196f3;
   }
   .header__menu-link:hover, .header__menu-link:focus {
     color: #2196f3;
