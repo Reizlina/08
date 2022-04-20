@@ -7,11 +7,13 @@
 
   @media (max-width: 768px) {
     padding: 16px 15px;
+
     &__desktop {
       display: none;
     }
 
     &__mobile {
+      border-bottom: 1px solid rgba(236, 236, 236, 1);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -149,6 +151,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     &__socials-item:not(:last-child) {

@@ -223,7 +223,7 @@ body {
   .header__menu-item.current::after {
     content: '';
     position: absolute;
-    bottom: -33px;
+    bottom: -35px;
     left: 0;
     height: 4px;
     width: 100%;
@@ -395,6 +395,7 @@ body {
     display: none;
   }
   .header__mobile {
+    border-bottom: 1px solid #ececec;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -548,6 +549,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .header__socials-item:not(:last-child) {
     margin-right: 20px;
